@@ -1,50 +1,61 @@
 {
   "repositories": {
-      "mohicanlaw/law-docs": {
-          "custom": {
-              "allow-unauthenticated-commits":true,
-              "serve":"latest",
-              "location_regex":"~/.*\\.pdf$"
-          }
-      },
-      "mohicanlaw/law-xml": {
-          "custom": {
-              "type":"xml",
-              "allow-unauthenticated-commits":true,
-              "serve":"latest",
-              "serve-prefix":"_uncodified_xml"
-          }
-      },
-      "mohicanlaw/law-html": {
-          "custom": {
-              "preview":"git@github.com:mohicanlaw/law-html-preview.git",
-              "type":"html",
-              "serve":"historical",
-              "location_regex":"/"
-          }
-      },
-      "mohicanlaw/law-xml-codified": {
-          "custom": {
-              "preview":"git@github.com:mohicanlaw/law-xml-codified-preview.git",
-              "type":"xml-codified",
-              "serve":"historical",
-              "serve-prefix":"_xml"
-          }
-      },
-      "mohicanlaw/law-rdf": {
-        "custom": {
-            "type":"rdf",
-            "serve":"historical",
-            "serve-prefix":"_rdf"
-        }
-      },
-      "mohicanlaw/law-static-assets": {
-          "custom": {
-              "type":"static-assets",
-              "allow-unauthenticated-commits":true,
-              "serve":"latest",
-              "location_regex":"~.+(_document|_reader).+$"
-          }
+    "mohicanlaw/law-docs": {
+      "custom": {
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "location_regex": "~/.*\\.pdf$",
+        "routes": [
+          ".*\\.pdf"
+        ]
       }
+    },
+    "mohicanlaw/law-xml": {
+      "custom": {
+        "type": "xml",
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "serve-prefix": "_uncodified_xml"
+      }
+    },
+    "mohicanlaw/law-html": {
+      "custom": {
+        "preview": "git@github.com:mohicanlaw/law-html-preview.git",
+        "type": "html",
+        "serve": "historical",
+        "location_regex": "/",
+        "routes": [
+          ".*"
+        ]
+      }
+    },
+    "mohicanlaw/law-xml-codified": {
+      "custom": {
+        "preview": "git@github.com:mohicanlaw/law-xml-codified-preview.git",
+        "type": "xml-codified",
+        "serve": "historical",
+        "serve-prefix": "_xml"
+      }
+    },
+    "mohicanlaw/law-rdf": {
+      "custom": {
+        "type": "rdf",
+        "serve": "historical",
+        "serve-prefix": "_rdf"
+      }
+    },
+    "mohicanlaw/law-static-assets": {
+      "custom": {
+        "type": "static-assets",
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "location_regex": "~.+(_document|_reader).+$",
+        "is_fallback": true,
+        "routes": [
+          ".*/_document/.*",
+          "_reader/.*"
+        ]
+      }
+    }
   }
 }
