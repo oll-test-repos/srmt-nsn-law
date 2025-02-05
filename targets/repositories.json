@@ -1,9 +1,6 @@
 {
   "repositories": {
       "mohicanlaw/law-docs": {
-          "urls": [
-              "https://github.com/mohicanlaw/law-docs.git"
-          ],
           "custom": {
               "allow-unauthenticated-commits":true,
               "serve":"latest",
@@ -11,9 +8,6 @@
           }
       },
       "mohicanlaw/law-xml": {
-          "urls": [
-              "https://github.com/mohicanlaw/law-xml.git"
-          ],
           "custom": {
               "type":"xml",
               "allow-unauthenticated-commits":true,
@@ -22,9 +16,6 @@
           }
       },
       "mohicanlaw/law-html": {
-          "urls": [
-              "https://github.com/mohicanlaw/law-html.git"
-          ],
           "custom": {
               "preview":"git@github.com:mohicanlaw/law-html-preview.git",
               "type":"html",
@@ -33,9 +24,6 @@
           }
       },
       "mohicanlaw/law-xml-codified": {
-          "urls": [
-              "https://github.com/mohicanlaw/law-xml-codified.git"
-          ],
           "custom": {
               "preview":"git@github.com:mohicanlaw/law-xml-codified-preview.git",
               "type":"xml-codified",
@@ -51,9 +39,6 @@
         }
       },
       "mohicanlaw/law-static-assets": {
-          "urls": [
-              "https://github.com/mohicanlaw/law-static-assets.git"
-          ],
           "custom": {
               "type":"static-assets",
               "allow-unauthenticated-commits":true,
