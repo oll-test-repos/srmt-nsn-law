@@ -43,7 +43,7 @@
               "serve-prefix":"_xml"
           }
       },
-      "mohican/law-static-assets": {
+      "mohicanlaw/law-static-assets": {
           "urls": [
               "https://github.com/mohicanlaw/law-static-assets.git"
           ],
