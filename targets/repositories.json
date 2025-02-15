@@ -31,7 +31,7 @@
               "serve-prefix":"_xml"
           }
       },
-      "openlawlibrary/law-static-assets": {
+      "cityofsanmateo/law-static-assets": {
           "custom": {
               "type":"static-assets",
               "allow-unauthenticated-commits":true,
